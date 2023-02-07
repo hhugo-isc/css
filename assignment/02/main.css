@@ -1,0 +1,45 @@
+/* instruction 1 */
+.box {
+  padding: 8px 16px;
+  border: 1px solid mediumslateblue;
+  margin: 20px;
+}
+
+/* instruction 2 */
+.box {
+  padding: 8px 16px 4px 10px;
+}
+
+/* instruction 4 */
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.box.first-box {
+  height: 100%;
+}
+
+/* instruction 5 */
+.box.first-box {
+  height: 300px;
+  width: 50%;
+}
+
+/* instruction 6 */
+.box {
+  display: inline-block;
+}
+
+/* instruction 7 */
+.box.first-box {
+  visibility: hidden;
+}
+
+/* instruction 8 */
+div:last-of-type:hover {
+  background: red;
+}
