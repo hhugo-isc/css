@@ -1,0 +1,31 @@
+/* Instruction 5 */
+body {
+  font-family: sans-serif;
+}
+/* Instruction 1 */
+h1 {
+  color: #fce162;
+  font-family: "sans-serif";
+}
+
+/* Instruction 2 */
+code {
+  font-family: monospace;
+  color: red;
+}
+
+/* Instruction 3 */
+li > code + code {
+  color: green;
+}
+
+/* Instruction 6 */
+li {
+  font-family: inherit;
+}
+
+/* Instruction 7 */
+ol > li + li {
+  background: #000;
+  color: white;
+}
