@@ -1,6 +1,6 @@
 #product-overview {
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6), transparent),
-    url("./images/freedom.jpg") left 10% bottom 70% / cover no-repeat border-box;
+    url("./images/freedom.jpg") center / cover no-repeat border-box;
   /* background-image: url("./images/freedom.jpg");
   background-size: cover;
   background-position: left 10% bottom 20%; */
@@ -12,12 +12,6 @@
   height: 33vh;
   /* padding: 0.6rem; */
   position: relative;
-  margin-top: 2.75rem;
-}
-
-.section-title {
-  color: #2ddf5c;
-  text-align: center;
 }
 
 #product-overview h1 {
@@ -28,26 +22,33 @@
   left: 3px;
 }
 
+@media (min-width: 40rem) and (min-height: 60rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 25%;
+  }
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+}
+
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
+}
+
 .plan {
   background: #d5ffdc;
   text-align: center;
   padding: 1rem;
-  margin: 0.5rem;
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
-}
-
-.plan__list {
-  width: 80%;
-  margin: auto;
-  text-align: center;
+  margin: 0.5rem 0;
+  width: 100%;
 }
 
 .plan--highlited {
   background: #19b84c;
   color: white;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
 }
 
 .plan__annotation {
@@ -84,6 +85,25 @@
   margin: 8px 0;
 }
 
+@media (min-width: 40rem) {
+  .plan__list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .plan {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 13rem;
+    max-width: 25rem;
+  }
+
+  .plan--highlited {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
 #key-features {
   background: #ff1b68;
   margin-top: 5rem;
@@ -102,13 +122,6 @@
   text-align: center;
 }
 
-.key-feature {
-  display: inline-block;
-  width: 30%;
-
-  vertical-align: top;
-}
-
 .key-feature__image {
   background: #ffcede;
   width: 128px;
@@ -124,6 +137,15 @@
   font-weight: 700;
   color: white;
   font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    max-width: 25rem;
+  }
 }
 
 .modal {
