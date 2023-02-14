@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 7rem 1fr 7rem;
+  height: 100vh;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
